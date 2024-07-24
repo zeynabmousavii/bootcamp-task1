@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <title>Tapsi Demo</title>
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/travell__slide.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />  -->
+</head>
+
+<body>
+    <section class="container block">
+
+        <div class="accordion-wrapper">
+            <div class="accordion__intro">
+                <h2 class="accordion__heading">رزومه و سوابق</h2>
+                <span>
+                    <span>ویرایش</span>
+                    <span><i class="fa-regular fa-pen-to-square"></i></span>
+                </span>
+            </div>
+
+            <div class="accordion">
+                <header class="accordion__header ">
+                    <h2 class="accordion__heading">سابقه تحصیلی</h2>
+
+                    <span>
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </span>
+
+                </header>
+                <div class="accordion__content">
+                    <p>
+                        لورمLorem ipsum dolor sit, amet consectetur adipisicing elit. Odit voluptatem amet sapiente
+                        ullam
+                        voluptas voluptate ducimus ut nulla modi laudantium? Quo rerum quasi quisquam sint, repudiandae
+                        voluptatibus hic quod mollitia!
+                    </p>
+                </div>
+            </div>
+
+            <div class="accordion">
+                <header class="accordion__header">
+                    <h2 class="accordion__heading">سوابق کاری</h2>
+
+                    <span class="">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </span>
+
+                </header>
+                <div class="accordion__content">
+                    <p>
+                        لورمLorem ipsum dolor sit, amet consectetur adipisicing elit. Odit voluptatem amet sapiente
+                        ullam
+                        voluptas voluptate ducimus ut nulla modi laudantium? Quo rerum quasi quisquam sint, repudiandae
+                        voluptatibus hic quod mollitia!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <script>
+        const accordionHeaders = document.querySelectorAll(".accordion__header");
+        const accordions = document.querySelectorAll(".accordion");
+        accordionHeaders.forEach((item) => {
+            item.addEventListener("click", (e) => {
+
+                e.target.parentElement.classList.toggle("accordion__expanded");
+            });
+        });
+    </script>
+</body>
+
+</html>
